@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            height: 200px;
+        }
+
+        .header {
+            background: #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            width: 600px;
+            font-size: 20px;
+            display: flex;
+        }
+
+        .image {
+            height: 120px;
+            display: flex;
+            justify-content: end;
+            align-content: center;
+            width: 400px;
+            padding-right: 35px;
+
+
+        }
+
+        .account-info {
+            background: #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            width: 400px
+        }
+
+        .header h1 {
+            color: #ff4a6e;
+            margin-top: 4px;
+        }
+
+        .account-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            height: 450px;
+            width: 75%;
+        }
+
+        .card {
+            background: #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .btn {
+            background: black;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="para">
+                <h1>HOME</h1>
+                <p>Welcome Back..<br>Let's Track Money Together</p>
+            </div>
+            <div class="image">
+                <img src="Assests/logo.0efa799a.png" alt="image">
+            </div>
+
+        </div>
+        <div class="account-info">
+            <div>
+                <p>Total Money Spent - <strong>12,000</strong></p>
+                <p>Account Balance - <strong>20,000</strong></p>
+            </div>
+            <span style="font-size: 40px;">👤</span>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <div class="block">
+                <p>Add Expense</p>
+                <button class="btn">Add Expense</button>
+            </div>
+        </div>
+        <div class="card">
+            <p>Summary</p>
+            <button class="btn">View Summary</button>
+        </div>
+        <div class="card">
+            <p>Budget</p>
+            <button class="btn">Budget</button>
+        </div>
+        <div class="card">
+            <p>Goal Setting</p>
+            <button class="btn">Set Goal</button>
+        </div>
+    </div>
+</body>
+
+</html>
