@@ -59,8 +59,8 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    height: 450px;
-    width: 75%;
+    height: 400px;
+    width: 90%;
 }
 
 .card {
@@ -68,7 +68,12 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Pushes the button to the bottom */
+    height: 90%; /* Ensures the card takes full height */
 }
+
 
 .btn {
     background: black;
@@ -77,5 +82,8 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    align-self: center; /* Centers button inside flex container */
 }
+
